@@ -76,7 +76,7 @@ body {
 }
 
 .content h5 {
-  margin-top: 50px;
+  margin-top: 20px;
   font-size: 16px;
   padding: 0;
 }
@@ -88,6 +88,10 @@ body {
   align-items: center;
   gap: 12px;
   width: 100%;
+}
+
+.button-container {
+  margin-bottom: 50px;
 }
 
 a {
