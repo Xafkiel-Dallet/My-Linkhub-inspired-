@@ -23,7 +23,7 @@ document.getElementById('instagramBtn').addEventListener('click', function(e) {
   changeButtonBackground(this, 'Images/insta.jpg', this.href);
 });
 
-document.getElementById('Images/discordBtn').addEventListener('click', function(e) {
+document.getElementById('discordBtn').addEventListener('click', function(e) {
   e.preventDefault();
   changeButtonBackground(this, 'Images/dc.jpg', this.href);
 });
