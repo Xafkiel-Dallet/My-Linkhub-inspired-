@@ -13,12 +13,12 @@ document.getElementById('facebookBtn').addEventListener('click', function(e) {
   changeButtonBackground(this, 'Images/fb.jpg', this.href);
 });
 
-document.getElementById('Images/twitterBtn').addEventListener('click', function(e) {
+document.getElementById('twitterBtn').addEventListener('click', function(e) {
   e.preventDefault();
   changeButtonBackground(this, 'Images/twitter.jpg', this.href);
 });
 
-document.getElementById('Images/instagramBtn').addEventListener('click', function(e) {
+document.getElementById('instagramBtn').addEventListener('click', function(e) {
   e.preventDefault();
   changeButtonBackground(this, 'Images/insta.jpg', this.href);
 });
