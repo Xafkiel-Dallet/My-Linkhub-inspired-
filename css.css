@@ -15,16 +15,22 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  margin: 0;
-  padding: 0;
+  justify-content: flex-start;
+  padding-top: 40px;
 }
 
 figure.profile-container{
   display: flex;
+  align-items: center;
   flex-direction: column;
   gap: 10px;
+}
+
+figure.profile-container figcaption {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
 
 .background {
@@ -33,7 +39,7 @@ figure.profile-container{
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url('Images/bg.jpg');
+  background-image: url('bg.jpg');
   background-size: cover;
   background-position: center;
   filter: blur(5px);
@@ -95,10 +101,6 @@ figure.profile-container{
   align-items: center;
   gap: 12px;
   width: 100%;
-}
-
-.button-container {
-  margin-bottom: 50px;
 }
 
 a {
