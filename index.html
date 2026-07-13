@@ -2,16 +2,16 @@
 <html>
 <head>
   <title>My Linkhub</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" type="text/css" href="css.css">
 </head>
 <body>
   <div class="background"></div>
   <div class="overlay"></div>
   
-  <div class="profile-container fade-in">
-    <img src="Images/profile.jpg" alt="Profile">
-  </div>
+  <figure class="profile-container fade-in">
+    <img src="profile.jpg" alt="Profile">
+    <figcaption>Russel Endico</figcaption>
+  </figure>
   
   <div class="content fade-in">
   <h4>Hello! My name is Russel and below are my links</h4>
@@ -21,14 +21,17 @@
   <a id="facebookBtn" href="https://www.facebook.com/share/198YzSfwGT/"target="_blank">Facebook</a>
   <a id="twitterBtn" href="https://x.com/Default404_r"target="_blank">Twitter</a>
   <a id="instagramBtn" href="https://www.instagram.com/mrch.icken30"target="_blank">Instagram</a>
-  <a id="discordBtn" href="https://discord.com/users/827791231266455583"target="_blank">Discord</a>
-  <a id="tiktokBtn" href="https://www.tiktok.com/@zscire"target="_blank">TikTok</a>
-  <a id="telegramBtn" href="https://t.me/OxidenUss/"target="_blank">Telegram</a>
+  <a id="discordBtn" href="discordapp.com/users/userid/827791231266455583"target="_blank">Discord</a>
+  <a id="telegramBtn" href="t.me/OxidenUss/"target="_blank">Telegram</a>
 </div>
 
 <div class="content fade-in">
   <h5>This is just a test.</h5> 
 </div>
+  
+  
+  
+ 
    <script>
     const fadeElements = document.querySelectorAll('.fade-in');
     const observer = new IntersectionObserver((entries) => {
@@ -41,6 +44,13 @@
 
     fadeElements.forEach(el => observer.observe(el));
   </script>
+  
+  
   <script src="js.js"></script>
+  
+
 </body>
+
+
+
 </html>
