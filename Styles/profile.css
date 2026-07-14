@@ -1,0 +1,27 @@
+figure.profile-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+figure.profile-container figcaption {
+  color: white;
+  text-align: center;
+  font-size: 16px;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+.profile-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.profile-container img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 2px solid white;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+}
