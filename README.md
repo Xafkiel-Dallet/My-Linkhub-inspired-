@@ -1,5 +1,3 @@
-My LinkHub Inspired
-
 A modern, responsive LinkHub-inspired web application built with HTML, CSS, and JavaScript. This project focuses on creating a clean, visually appealing interface for organizing and sharing important links while showcasing front-end development skills.
 
 📸 Screenshot
