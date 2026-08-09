@@ -42,12 +42,9 @@ This project was created to practice and improve my front-end web development sk
 
 📌 Future Improvements
 
-- Dark/Light mode toggle
 - Additional animations
 - Theme customization
 - Better accessibility
 - More customization options
 
-👨‍💻 Author
 
-Created by Russel Endico.
