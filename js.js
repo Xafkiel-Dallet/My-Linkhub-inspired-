@@ -10,30 +10,30 @@ function changeButtonBackground(button, image, link) {
 
 document.getElementById('facebookBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/fb.jpg', this.href);
+  changeButtonBackground(this, 'fb.jpg', this.href);
 });
 
 document.getElementById('twitterBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/twitter.jpg', this.href);
+  changeButtonBackground(this, 'twitter.jpg', this.href);
 });
 
 document.getElementById('instagramBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/insta.jpg', this.href);
+  changeButtonBackground(this, 'insta.jpg', this.href);
 });
 
 document.getElementById('discordBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/dc.jpg', this.href);
+  changeButtonBackground(this, 'dc.jpg', this.href);
 });
 
 document.getElementById('tiktokBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/tiktok.jpg', this.href);
+  changeButtonBackground(this, 'tiktok.jpg', this.href);
 });
 
 document.getElementById('telegramBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'Images/tg.jpg', this.href);
+  changeButtonBackground(this, 'tg.jpg', this.href);
 });
