@@ -50,6 +50,11 @@ body {
 }
 
 
+.navigation{
+    display: flex;
+}
+
+
 .figtitle{
     color: var(--text-color);
 }
