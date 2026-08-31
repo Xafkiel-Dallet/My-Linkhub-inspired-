@@ -90,6 +90,7 @@ body {
 .content h4 {
     font-size: 22px;
     margin: 0;
+    color: var(--text-color);
 }
 
 .content h5 {
