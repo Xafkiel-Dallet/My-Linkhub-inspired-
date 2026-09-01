@@ -1,5 +1,6 @@
 :root{
     --text-color: white;
+    --blur-ten: 10px;
 }
 
 /* ==================== GLOBAL ==================== */
@@ -51,7 +52,23 @@ body {
 
 
 .navigation{
-    display: flex;
+    position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  z-index: 100;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(var(--blur-ten));
+  -webkit-backdrop-filter: blur(var(--blur-ten));
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 
