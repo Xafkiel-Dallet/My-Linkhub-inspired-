@@ -52,9 +52,9 @@ body {
 
 
 .navigation{
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
-    position: fixed;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.8);
+  position: fixed;
   top: 0px;
   left: 0px;
   right: 0px;
@@ -64,8 +64,8 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-    background: rgba(255, 255, 255, 0.15);
-    backdrop-filter: blur(var(--blur-ten));
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(var(--blur-ten));
   -webkit-backdrop-filter: blur(var(--blur-ten));
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0px;
