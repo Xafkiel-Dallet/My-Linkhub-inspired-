@@ -65,7 +65,7 @@ body {
   align-items: center;
   padding: 10px 20px;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(var(--blur-ten));
+ text-shadow: 2px 2px 5px rgba(0,0,0,0.8); backdrop-filter: blur(var(--blur-ten));
   -webkit-backdrop-filter: blur(var(--blur-ten));
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 0px;
@@ -117,6 +117,8 @@ body {
     font-size: 22px;
     margin: 0;
     color: var(--text-color);
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .content h5 {
