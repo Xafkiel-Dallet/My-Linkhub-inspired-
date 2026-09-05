@@ -74,8 +74,30 @@ body {
 }
 
 
+.my-links {
+  list-style: none;   /* removes bullet */
+  margin: 0;
+  padding: 0;
+}
+
+.my-links li {
+  display: inline-block;   /* keeps items side by side */
+  margin-right: 10px;      /* spacing between icons */
+}
+
+.my-links a {
+  color: white;            /* force icon color to white */
+  text-decoration: none;   /* remove underline */
+  font-size: 24px;         /* make icon bigger */
+}
+
+.my-links a:hover {
+  color: #ccc;             /* lighter shade on hover */
+}
+
 .figtitle{
     color: var(--text-color);
+    margin-top: 15px;
 }
 
 /* ==================== BUTTONS (NEW VERSION WITH GAP) ==================== */

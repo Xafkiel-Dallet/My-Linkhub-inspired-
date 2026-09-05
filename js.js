@@ -35,5 +35,4 @@ document.getElementById('tiktokBtn').addEventListener('click', function(e) {
 
 document.getElementById('telegramBtn').addEventListener('click', function(e) {
   e.preventDefault();
-  changeButtonBackground(this, 'tg.jpg', this.href);
 });
