@@ -97,7 +97,7 @@ body {
 }
 
 /* ==================== BUTTONS ==================== */
-.button-container {
+.-container {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -159,6 +159,10 @@ body {
 
 /* ==================== ABOUT THIS ACCOUNT BUTTON ==================== */
 /* ==================== ABOUT THIS ACCOUNT TEXT ONLY ==================== */
+
+
+
+
 .nav-item {
   display: block;
   width: auto;
@@ -229,6 +233,11 @@ body {
   transform: translateY(0);
 }
 
+.main-card {
+  display: contents;
+  
+  
+}
 .drawer-header {
   display: flex;
   justify-content: space-between;
@@ -284,20 +293,51 @@ body {
   transform: translateY(0);
 }
 
-@media (max-width: 768px) {
-
-  .profile-container img {
-    width: 120px;
-    height: 120px;
+@media (min-width: 768px) {
+  .main-card {
+    /* 1. KULAY NG CARD (Siguradong lalabas ito) */
+    background-color: #1e1e2e; /* Pwedeng palitan: #ffffff para sa puti, o #222222 */
+    color: #ffffff;
+    
+    /* 2. SUKAT AT PADDING */
+    width: 100%;
+    max-width: 480px;          /* Limitasyon sa lapad ng card sa desktop */
+    padding: 40px 30px;        /* Paligid na espasyo sa loob ng card */
+    
+    /* 3. DESIGN DETAILS */
+    border-radius: 20px;       /* Kurbadong kanto */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5); /* Anino para umangat sa background */
+    border: 1px solid rgba(255, 255, 255, 0.1); /* Subtle na border */
   }
+}
 
-  .content h4 {
-    font-size: 18px;
-  }
+/* --- BUTTON CONTAINER STYLING --- */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 20px 0;
+}
 
-  .button-container {
-    width: min(95%, 1200px); /* Added the missing comma */
-    margin-inline: auto;       /* Centers the container horizontally */
-  }
+.button-container a {
+  display: block;
+  padding: 12px;
+  
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  text-align: center;
+  transition: transform 0.2s, background 0.2s;
+}
 
+.button-container a:hover {
+  transform: translateY(-2px);
+  background-color: #e0e0e0;
+}
+
+/* P tag button */
+.nav-item {
+  cursor: pointer;
+  text-decoration: underline;
+  margin-top: 15px;
 }
