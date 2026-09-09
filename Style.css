@@ -285,11 +285,19 @@ body {
 }
 
 @media (max-width: 768px) {
+
   .profile-container img {
     width: 120px;
     height: 120px;
   }
+
   .content h4 {
     font-size: 18px;
   }
+
+  .button-container {
+    width: min(95%, 1200px); /* Added the missing comma */
+    margin-inline: auto;       /* Centers the container horizontally */
+  }
+
 }
