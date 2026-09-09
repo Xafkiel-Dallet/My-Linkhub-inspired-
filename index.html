@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Linkhub</title>
   <link rel="stylesheet" type="text/css" href="Style.css">
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-
-
 </head>
 <body>
   <div class="background"></div>
@@ -20,47 +17,43 @@
       <li><a href="https://github.com/Xafkiel-Dallet" target="_blank"><i class="fab fa-github"></i></a></li>
     </ul>
   </nav>
-  
-  
-  
-  
+
   <figure class="profile-container fade-in">
     <img src="profile.jpg" alt="Profile">
     <figcaption class="figtitle">Aspiring Web Developer</figcaption>
   </figure>
+
   <div class="content fade-in">
-  <h4>Hello! My name is Russel and below are my links</h4>
-</div>
+    <h4>Hello! My name is Russel and below are my links</h4>
+  </div>
 
-<div class="button-container fade-in">
-  <a id="facebookBtn" href="https://www.facebook.com/share/198YzSfwGT/"target="_blank">Facebook</a>
-  <a id="twitterBtn" href="https://x.com/Default404_r"target="_blank">Twitter</a>
-  <a id="instagramBtn" href="https://www.instagram.com/mrch.icken30"target="_blank">Instagram</a>
-  <a id="discordBtn" href="discordapp.com/users/userid/827791231266455583"target="_blank">Discord</a>
-  <a id="telegramBtn" href="t.me/OxidenUss"target="_blank">Telegram</a>
-</div>
+  <div class="button-container fade-in">
+    <a id="facebookBtn" href="https://www.facebook.com/share/198YzSfwGT/" target="_blank">Facebook</a>
+    <a id="twitterBtn" href="https://x.com/Default404_r" target="_blank">Twitter</a>
+    <a id="instagramBtn" href="https://www.instagram.com/mrch.icken30" target="_blank">Instagram</a>
+    <a id="discordBtn" href="https://discordapp.com/users/userid/827791231266455583" target="_blank">Discord</a>
+    <a id="telegramBtn" href="https://t.me/OxidenUss" target="_blank">Telegram</a>
+  </div>
 
+  <!-- P tag Button -->
+  <p class="nav-item fade-in" id="aboutBtn">About this account</p>
 
-<div class="details fade-in">
-  <p class="nav-item">About this account</p> 
-</div>
- 
- 
-   <script>
-    const fadeElements = document.querySelectorAll('.fade-in');
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.2 });
+  <!-- POPUP DRAWER MODAL -->
+  <div id="aboutDrawer" class="about-drawer">
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <h3>About this account</h3>
+        <button class="close-x" id="closeDrawerBtn">&#10005;</button>
+      </div>
+      <div class="drawer-body">
+        <p><strong>Username:</strong> Russel</p>
+        <p><strong>Role:</strong> Aspiring Web Front-End Developer</p>
+        <p><strong>Bio:</strong> Hello! Welcome to my Linkhub profile. Feel free to connect with me through my links above!</p>
+      </div>
+    </div>
+  </div>
 
-    fadeElements.forEach(el => observer.observe(el));
-  </script>
-  
+  <!-- Isang JS file na lang ang tawagin -->
   <script src="js.js"></script>
-
 </body>
-
 </html>
