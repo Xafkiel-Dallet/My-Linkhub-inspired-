@@ -11,7 +11,6 @@
   <div class="background"></div>
   <div class="overlay"></div>
   
-  <!-- 1. I-LABAS ANG NAVIGATION BAR DITO (Para laging nasa taas) -->
   <nav class="navigation fade-in">
     <div class="nav-title">Connect with me</div>
     <ul class="my-links">
@@ -19,7 +18,6 @@
     </ul>
   </nav>
 
-  <!-- 2. CARD WRAPPER (Profile, links, at about lang ang nakapaloob) -->
   <main class="main-card">
     <figure class="profile-container fade-in">
       <img src="profile.jpg" alt="Profile">
@@ -38,16 +36,24 @@
       <a id="telegramBtn" href="https://t.me/OxidenUss" target="_blank">Telegram</a>
     </div>
 
-    <!-- P tag Button -->
     <p class="nav-item fade-in" id="aboutBtn">About this account</p>
   </main>
 
-  <!-- POPUP DRAWER MODAL -->
+  <!-- POPUP DRAWER MODAL (Inayos ang laman) -->
   <div id="aboutDrawer" class="about-drawer">
-    ...
+    <div class="drawer-content">
+      <div class="drawer-header">
+        <h3>About this account</h3>
+        <button class="close-x" id="closeDrawerBtn">&#10005;</button>
+      </div>
+      <div class="drawer-body">
+        <p><strong>Name:</strong> Russel Dave Endico</p>
+        <p><strong>Role:</strong> Aspiring Web Front-End Developer</p>
+        <p><strong>Bio:</strong> Hello! Welcome to my Linkhub profile. Feel free to connect with me through my links above!</p>
+      </div>
+    </div>
   </div>
 
   <script src="js.js"></script>
 </body>
-
 </html>

@@ -202,24 +202,28 @@ body {
 
 
 /* ==================== MODAL / DRAWER ==================== */
+/* ==================== MODAL / DRAWER (FIXED) ==================== */
 .about-drawer {
   position: fixed;
   top: 0;
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.75); /* Dark screen backdrop */
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
+  
   display: flex;
   justify-content: center;
   align-items: center;
+  
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 9999;
+  z-index: 99999; /* Pinakamataas na layer para lumabas sa ibabaw ng lahat */
 }
 
+/* Kakapit ang styling na ito kapag clinick ang button */
 .about-drawer.show {
   opacity: 1;
   pointer-events: auto;
@@ -229,12 +233,14 @@ body {
   background: #ffffff;
   width: 85%;
   max-width: 380px;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-  color: #222;
+  padding: 25px;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  color: #222222;
   transform: translateY(20px);
   transition: transform 0.3s ease;
+  position: relative;
+  z-index: 100000;
 }
 
 .about-drawer.show .drawer-content {
@@ -245,7 +251,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #eeeeee;
   padding-bottom: 10px;
   margin-bottom: 15px;
 }
@@ -253,7 +259,7 @@ body {
 .drawer-header h3 {
   margin: 0;
   font-size: 18px;
-  color: #111;
+  color: #111111;
 }
 
 .close-x {
@@ -261,21 +267,22 @@ body {
   border: none;
   font-size: 20px;
   font-weight: bold;
-  color: #666;
+  color: #666666;
   cursor: pointer;
   padding: 4px 8px;
 }
 
 .close-x:hover {
-  color: #000;
+  color: #000000;
 }
 
 .drawer-body p {
   margin: 10px 0;
   font-size: 14px;
   line-height: 1.5;
-  color: #444;
+  color: #333333;
 }
+
 
 /* ==================== ANIMATIONS ==================== */
 
@@ -328,6 +335,31 @@ body {
   text-align: center;
   transition: transform 0.2s, background 0.2s;
 }
+
+ .drawer-content {
+    max-width: 600px;       /* Mula 380px, ginawa nating 550px para mas malapad */
+    width: 90%;
+    padding: 35px 30px;     /* Mas malaking espasyo sa loob ng card */
+    border-radius: 16px;    /* Kurbadong kanto */
+  }
+
+  /* Palalakihin ang font size ng pamagat */
+  .drawer-header h3 {
+    font-size: 22px;
+  }
+
+  /* Palalakihin ang mga text sa loob para madaling basahin sa desktop */
+  .drawer-body p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 12px 0;
+  }
+
+  /* Palalakihin ang X button sa gilid */
+  .close-x {
+    font-size: 24px;
+  }
+
 
 .button-container a:hover {
   transform: translateY(-2px);
