@@ -36,3 +36,14 @@ document.getElementById('tiktokBtn').addEventListener('click', function(e) {
 document.getElementById('telegramBtn').addEventListener('click', function(e) {
   e.preventDefault();
 });
+
+const items = document.querySelectorAll('.nav-item');
+
+items.forEach(item => {
+  item.addEventListener('click', () => {
+    // remove active from all
+    items.forEach(i => i.classList.remove('active'));
+    // add active to clicked one
+    item.classList.add('active');
+  });
+});''
