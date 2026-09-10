@@ -3,7 +3,7 @@
   --blur-ten: 10px;
 }
 
-/* ==================== GLOBAL ==================== */
+
 * {
   box-sizing: border-box;
 }
@@ -26,7 +26,7 @@ body {
   padding: 20px 0;
 }
 
-/* ==================== BACKGROUND ==================== */
+
 .background {
   position: fixed;
   top: 0;
@@ -96,7 +96,7 @@ body {
   margin-top: 15px;
 }
 
-/* ==================== BUTTONS ==================== */
+
 .button-container {
   display: flex;
   flex-direction: column;
@@ -125,7 +125,7 @@ body {
   transform: scale(1.05);
 }
 
-/* ==================== CONTENT & PROFILE ==================== */
+
 .content {
   text-align: center;
   margin-bottom: 20px;
@@ -157,14 +157,13 @@ body {
   object-fit: cover;
 }
 
-/* ==================== ABOUT THIS ACCOUNT BUTTON ==================== */
-/* ==================== ABOUT THIS ACCOUNT TEXT ONLY ==================== */
+
 
 .main-card {
-  width: 90%;             /* 90% ng lapad ng screen */
-  max-width: 400px;       /* Limitasyon para hindi masyadong lapad */
-  margin: 0 auto;         /* ISE-CENTER ANG MAIN CARD SA MIDDLE NG MOBILE DISPLAY */
-  text-align: center;     /* Ise-center ang profile image, text, at labels */
+  width: 90%;         
+  max-width: 400px; 
+  margin: 0 auto;    
+  text-align: center;    
   background: transparent;
   border: none;
   box-shadow: none;
@@ -176,24 +175,24 @@ body {
   width: auto;
   padding: 10px;
   cursor: pointer;
-  border: none;                   /* Tinanggal ang border */
-  background: transparent;        /* Tinanggal ang white background */
-  color: white;                   /* White text color */
+  border: none;
+  background: transparent;
+  color: white;      
   font-size: 13px;
   text-align: center;
   margin: 15px auto 0 auto;
   user-select: none;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Para litaw ang white text sa background */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
   transition: opacity 0.2s ease, transform 0.2s ease;
 }
 
-/* Effect kapag itinapat ang mouse/daliri */
+
 .nav-item:hover {
-  background: transparent;        /* Walang lalabas na background */
+  background: transparent;      
   
 }
 
-/* State kapag nakabukas ang modal */
+
 .nav-item.active {
   border: none;       
   background: transparent;
@@ -201,8 +200,7 @@ body {
 }
 
 
-/* ==================== MODAL / DRAWER ==================== */
-/* ==================== MODAL / DRAWER (FIXED) ==================== */
+
 .about-drawer {
   position: fixed;
   top: 0;
@@ -220,10 +218,10 @@ body {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  z-index: 99999; /* Pinakamataas na layer para lumabas sa ibabaw ng lahat */
+  z-index: 99999; 
 }
 
-/* Kakapit ang styling na ito kapag clinick ang button */
+
 .about-drawer.show {
   opacity: 1;
   pointer-events: auto;
@@ -305,23 +303,24 @@ body {
 
 @media (min-width: 768px) {
  .main-card {
-    background-color: rgba(20, 20, 20, 0.85);   /* Dito lang lilitaw ang background */
-    backdrop-filter: blur(8px);                 /* Glassmorphism blur */
-    border: 1px solid rgba(255, 255, 255, 0.15); /* Border */
-    border-radius: 20px;                        /* Kurbadong kanto */
-    padding: 35px 30px;                         /* Space sa loob ng card */
+    background-color: rgba(20, 20, 20, 0.85);  
+    backdrop-filter: blur(8px);       
+    border: 1px solid rgba(255, 255, 255, 0.15); 
+    border-radius: 20px;
+    padding: 35px 30px;
     width: 100%;
-    max-width: 460px;                           /* Sukat ng card sa desktop */
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); /* Anino */
+    max-width: 460px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4); 
     text-align: center;
     
   }
 
-/* --- BUTTON CONTAINER STYLING --- */
+
 .button-container {
   display: flex;
   flex-direction: column;
-  align-items: center;    /* ISE-CENTER ANG MGA BUTTONS HORIZONTALLY */
+  align-items: center;  
+  
   width: 100%;
   margin: 20px 0;
 }
@@ -337,25 +336,25 @@ body {
 }
 
  .drawer-content {
-    max-width: 600px;       /* Mula 380px, ginawa nating 550px para mas malapad */
+    max-width: 600px;
     width: 90%;
-    padding: 35px 30px;     /* Mas malaking espasyo sa loob ng card */
-    border-radius: 16px;    /* Kurbadong kanto */
+    padding: 35px 30px;  
+    border-radius: 16px; 
   }
 
-  /* Palalakihin ang font size ng pamagat */
+
   .drawer-header h3 {
     font-size: 22px;
   }
 
-  /* Palalakihin ang mga text sa loob para madaling basahin sa desktop */
+
   .drawer-body p {
     font-size: 16px;
     line-height: 1.6;
     margin: 12px 0;
   }
 
-  /* Palalakihin ang X button sa gilid */
+  
   .close-x {
     font-size: 24px;
   }
@@ -366,7 +365,7 @@ body {
   background-color: #e0e0e0;
 }
 
-/* P tag button */
+
 .nav-item {
   cursor: pointer;
   text-decoration: underline;
