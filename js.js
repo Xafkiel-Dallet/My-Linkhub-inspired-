@@ -1,4 +1,4 @@
-// Function para sa Button Background Image
+
 function changeButtonBackground(button, image, link) {
   button.style.backgroundImage = `url('${image}')`;
   button.style.backgroundSize = 'cover';
@@ -9,7 +9,7 @@ function changeButtonBackground(button, image, link) {
   }, 1200);
 }
 
-// Event Listeners para sa Social Links
+
 const fbBtn = document.getElementById('facebookBtn');
 if (fbBtn) {
   fbBtn.addEventListener('click', function(e) {
@@ -50,7 +50,7 @@ if (tgBtn) {
   });
 }
 
-// === TOGGLE ABOUT MODAL (FIXED) ===
+
 const aboutBtn = document.getElementById('aboutBtn');
 const aboutDrawer = document.getElementById('aboutDrawer');
 const closeDrawerBtn = document.getElementById('closeDrawerBtn');
@@ -68,14 +68,14 @@ if (closeDrawerBtn) {
   closeDrawerBtn.addEventListener('click', toggleAboutModal);
 }
 
-// Isara ang modal kapag cliniclick ang paligid sa labas ng card
+
 window.addEventListener('click', (e) => {
   if (e.target === aboutDrawer) {
     toggleAboutModal();
   }
 });
 
-// === FADE IN ANIMATION OBSERVER ===
+
 document.addEventListener("DOMContentLoaded", () => {
   const fadeElements = document.querySelectorAll('.fade-in');
   
