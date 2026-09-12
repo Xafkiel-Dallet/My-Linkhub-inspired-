@@ -106,9 +106,10 @@ body {
 
 .button-container a {
   display: block;
-  width: 80vw;
+  width: 90vw;
   max-width: 400px;
   padding: 15px 20px;
+  margin: 0 auto;
   text-align: center;
   text-decoration: none;
   color: white;
