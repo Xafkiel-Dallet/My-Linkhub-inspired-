@@ -282,9 +282,6 @@ body {
   color: #333333;
 }
 
-
-
-
 .navigation.fade-in{
   opacity: 0;
   transform: translateY(-40px);
@@ -317,7 +314,6 @@ body {
     
   }
 
-
 .button-container {
   display: flex;
   flex-direction: column;
@@ -344,11 +340,9 @@ body {
     border-radius: 16px; 
   }
 
-
   .drawer-header h3 {
     font-size: 22px;
   }
-
 
   .drawer-body p {
     font-size: 16px;
@@ -361,12 +355,10 @@ body {
     font-size: 24px;
   }
 
-
 .button-container a:hover {
   transform: translateY(-2px);
   background-color: #e0e0e0;
 }
-
 
 .nav-item {
   cursor: pointer;
