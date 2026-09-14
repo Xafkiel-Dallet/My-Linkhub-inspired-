@@ -30,21 +30,11 @@ This project was created to practice and improve my front-end web development sk
 2. Open "index.html" in your browser.
 3. Explore the application.
 
-📁 Project Structure
-
-├── css/
-├── js/
-├── images/
-├── index.html
-└── README.md
-
 📌 Future Improvements
 
 - Dark/Light mode toggle
 - Additional animations
 - Theme customization
-- Better accessibility
-- More customization options
 
 👨‍💻 Author
 
