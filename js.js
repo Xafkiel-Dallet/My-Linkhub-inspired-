@@ -14,7 +14,7 @@ const fbBtn = document.getElementById('facebookBtn');
 if (fbBtn) {
   fbBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    changeButtonBackground(this, 'fb.jpg', this.href);
+    changeButtonBackground(this, 'Images/fb.jpg', this.href);
   });
 }
 
@@ -22,7 +22,7 @@ const twBtn = document.getElementById('twitterBtn');
 if (twBtn) {
   twBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    changeButtonBackground(this, 'twitter.jpg', this.href);
+    changeButtonBackground(this, 'Images/twitter.jpg', this.href);
   });
 }
 
@@ -30,7 +30,7 @@ const igBtn = document.getElementById('instagramBtn');
 if (igBtn) {
   igBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    changeButtonBackground(this, 'insta.jpg', this.href);
+    changeButtonBackground(this, 'Images/insta.jpg', this.href);
   });
 }
 
@@ -38,7 +38,7 @@ const dcBtn = document.getElementById('discordBtn');
 if (dcBtn) {
   dcBtn.addEventListener('click', function(e) {
     e.preventDefault();
-    changeButtonBackground(this, 'dc.jpg', this.href);
+    changeButtonBackground(this, 'Images/dc.jpg', this.href);
   });
 }
 
