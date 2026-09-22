@@ -2,8 +2,9 @@ A modern, responsive LinkHub-inspired web application built with HTML, CSS, and 
 
 📸 Screenshot
 
-
-/Screenshots/homepage.png
+![Screenshot 1](./Screenshot/ss1.jpg)
+![Screenshot 2](./Screenshot/ss2.jpg)
+![Screenshot 3](./Screenshot/ss3.jpg)
 
 ✨ Features
 
